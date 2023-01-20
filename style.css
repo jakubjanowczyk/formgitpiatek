@@ -14,9 +14,7 @@ body{
 
 
 
-div {
-  background-color: yellow;
-}
+
 @keyframes pulse {
   25% {
     transform: scale(1.1);
