@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400&display=swap');
 
 * {
@@ -9,5 +10,148 @@
 body{
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
+}
+
+
+
+div {
+  background-color: yellow;
+}
+@keyframes pulse {
+  25% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+}
+.pulse {
+  display: inline-block;
+}
+
+.pulse:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+
+  33.3% {
+    transform: translateX(-6px);
+  }
+
+  49.95% {
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.wobble-horizontal {
+  display: inline-block;
+}
+
+.wobble-horizontal:hover {
+  animation-name: wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.rotate:hover {
+  animation: rotate 2s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.round-corners {
+  display: inline-block;
+  transition-duration: inherit;
+  transition-property: border-radius;
+}
+
+.round-corners:hover {
+  border-radius: 1em;
+}
+.glow {
+  display: inline-block;
+  transition-duration: inherit;
+  transition-property: box-shadow;
+}
+.glow:hover {
+  box-shadow: 0 0 8px shadowColour;
+}
+=======
+body {
+  margin: 0;
+  background-color: #e8f3e7;
+  height: 100vh;
+}
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.inputGroup {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.inputGroup label {
+  margin-bottom: 4px;
+}
+.inputGroup input {
+  height: 2rem;
+  border-radius: 6px;
+  border: 1px solid #6cd762;
+  padding: 0 8px;
+}
+.btn {
+  margin: 16px;
+}
+.btn input {
+  height: 2rem;
+  border-radius: 6px;
+  border: 1px solid #2f632a;
+  padding: 0 8px;
+  width: 100%;
+  background-color: #6cd762;
+  color: #f3f5f3;
+  cursor: pointer;
+}
+.btn input:hover{
+  background-color: #5fbd57;
 }
 
