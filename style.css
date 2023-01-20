@@ -1,3 +1,25 @@
-div{
-    background-color: yellow;
+body {
+  margin: 0;
+  background-color: #e8f3e7;
+  height: 100vh;
+}
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.inputGroup {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.inputGroup label {
+  margin-bottom: 4px;
+}
+.inputGroup input {
+  height: 2rem;
+  border-radius: 6px;
+  border: 1px solid #6cd762;
+  padding: 0 8px;
 }
