@@ -1,4 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+}
+
+
+
 div {
   background-color: yellow;
 }
@@ -139,3 +154,4 @@ body {
 .btn input:hover{
   background-color: #5fbd57;
 }
+
